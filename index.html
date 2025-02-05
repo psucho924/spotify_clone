@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <nav class=>
+      <header>
+        <div class="logo">
+          <img class="invert pointer" src="images/logo.svg" alt="" />
+          <img class="invert pointer icon-width" id="hamberger" src="images/hamberger.svg" alt="">
+        </div>
+
+        <div class="search">
+          <div class="home">
+            <img class="icon-width pointer" src="images/home.svg" alt="" />
+          </div>
+
+          <div class="input">
+            <img
+              class="invert icon-width pointer"
+              src="images/search.svg"
+              alt=""
+            />
+            <input
+              class="pointer"
+              type="text"
+              id="search"
+              placeholder="What do you want to play ?"
+            />
+            <img
+              class="invert icon-width pointer"
+              id="bin"
+              src="images/bin.svg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="login">
+          <button class="pointer" id="signin">Sign in</button>
+          <button class="pointer" id="login">Log in</button>
+        </div>
+      </header>
+    </nav>
+
+
+    <main >
+
+        <div class="left ">
+            <div class="p-1 library" >
+                <img class="icon-width invert pointer" src="images/library.svg" alt="">
+                <span class="textGrey">Your Library</span>
+            </div>
+
+            <div class="playlists ">
+            </div>
+
+            <footer>
+              <div class="footer p-1 pointer">
+                <a href="/">Legal</a>
+                <a href="/">Services & Privacy Center</a>
+                <a href="/">Privacy policies</a>
+                <a href="/">cookies</a>
+                <a href="/">About Us </a>
+                <a href="/">accessibility</a>
+              </div>
+            </footer>
+        </div>
+        
+        <div class="right ">
+          <h2>Spotify playlists</h2>
+          <div class="song_library"></div>
+          <div class="forSeekBar"> 
+
+            <div class="playBar">
+              <div class="songInfo"></div>
+              <div class="playLogos">
+                <img class="invert pointer" id="previous" src="images/previous.svg" alt="">
+                <img class="invert pointer" id="play" src="images/play.svg" alt="">
+                <img class="invert pointer" id="next" src="images/next.svg" alt="">
+              </div>
+              <div class="TimeAndSound">
+                <div class="time"></div>
+                <div class="music">
+                  
+                  <img class="invert pointer" id="sound" src="images/sound.svg" alt="">
+                  <input class="pointer" id="vol_range" type="range">
+                </div>
+              </div>
+            </div>
+            <div class="seekbar pointer">
+              <div class="circle pointer"></div>
+            </div>
+          </div>
+
+          
+        </div>
+      </main>
+      
+     
+    <script src="script.js"></script>
+  </body>
+</html>

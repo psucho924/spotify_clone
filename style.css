@@ -1,0 +1,419 @@
+body{
+    background-color: black;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    padding: 8px;
+    position: sticky;
+    top: 0px;
+    z-index: 12;
+    background-color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    /* background-color: red; */
+}
+
+.logo{
+    display: flex;
+    gap: 14px;
+    width: 100px;
+}
+
+.logo img:nth-child(2){
+    display: none;
+}
+
+.logo img{
+    position: relative;
+    left: 17px;
+}
+
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 60px;
+    background-color:var(--greyColor);
+    
+}
+
+.search{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    left: 97px;
+}
+
+.input{
+    width: calc(100% - 68px);
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--greyColor) ;
+    border-radius: 100px;
+}
+
+.input input::placeholder, input{
+    font-size: 14px;
+    font-weight: 400;
+    background-color : var(--greyColor) ;
+    color: var(--textColor);
+    width: 85%;
+    border: none;
+}
+
+.login{
+    display: flex;
+    gap: 12px;
+}
+
+.login button:hover{
+    font-weight: 700 !important;
+    transform: scale(1.07);
+}
+
+
+#signin{
+    background-color: black;
+    color: var(--textColor);
+    border: none;
+    font-weight: 700;
+}
+
+#signin:hover{
+    color: white;
+}
+
+#login{
+    background-color: white;
+    color: black;
+    font-weight: 400;
+}
+
+.login button{
+    padding: 12px 29px;
+    border-radius: 33px;
+    font-size: 16px;
+    
+}
+
+
+
+
+
+main{
+    display: flex;
+    margin: 0px 8px;
+    gap: 8px;
+    height: calc(100vh - 72px);
+    width: calc(100vw - 16px);
+    position: relative;
+}
+
+
+
+.left{
+    background-color: var(--greyColor);
+    border-radius: 8px;
+    height: 100%;
+    width: 22%;
+    position: relative;
+}
+
+
+.right{
+    padding: 23px;
+    background-color: var(--greyColor);
+    border-radius: 8px;
+    height: 100%;
+    width: 78%;
+    position: relative;
+}
+
+.library{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer{
+     position: absolute;
+     bottom: 20px;
+     width: 100%;
+     height: 9%;
+
+}
+
+.footer{
+    display: flex;
+    gap: 11px;
+    flex-wrap: wrap;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.song{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dotted grey;
+    border-radius: 8px;
+    width: 85%;
+    gap: 12px;
+    margin: 0 auto;
+    padding: 6px 12px;
+}
+
+.playlists{
+    height: 75%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+
+
+.music_info{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 13px;
+    width: 50%;
+
+}
+
+.info{
+      width: 78%;
+      font-size: .9em;
+}
+
+.musicSVG{
+    display: flex;
+        gap: 6px;
+        font-size: .9em;
+    }
+
+
+.right h2{
+    padding: 3px 0px 48px 0px;
+    text-align: center;
+}
+
+
+.card{
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    height: fit-content;
+    background-color: #3a3a3a;
+
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.card h2{
+    font-size: 17px;
+    padding-bottom: 0px;
+    margin: 7px 0px;
+}
+.card div{
+    font-size: 15px;
+    color: var(--textColor);
+}
+
+
+.song_library{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    overflow-y: auto;
+    height: 90%;
+}
+
+
+.playBar{
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    height: 50%;
+}
+
+.playLogos{
+    display: flex;
+    gap: 13px;
+    position: relative;
+    height: 30px;
+}
+
+
+.forSeekBar{
+    background-color:  rgb(75 81 75);
+      position: fixed;
+      bottom: 8px;
+      width: calc(77% - 46px);
+      height: 96px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+    padding: 20px;
+}
+.seekbar{
+    width: 97%;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.seekbar .circle{
+    position: absolute;
+    left: 0%;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.3s ease-out;
+}
+
+.TimeAndSound{
+    width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    position: relative;
+    left: 59px;
+}
+.songInfo{
+    width: 450px;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#sound{
+    position: absolute;
+    left: 18px;
+}
+
+
+
+@media screen and (max-width : 1200px){
+    
+    .left{
+        border: 1px solid var(--textColor);
+        width: 50%;
+        z-index: 2;
+        left: -82%;
+        /* background-color: red; */
+        transition: left 0.3s;
+    }
+    .right{
+        position: absolute;
+       width: calc(100vw - 16px);
+    }
+
+    .forSeekBar{
+        width: calc(100% - 59px);
+        z-index: 4
+    }
+
+    .logo img:nth-child(2){
+        display: block;
+    }
+
+    .search{
+        position: absolute;
+        left: 129px;
+    }
+
+
+    
+    .card{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width : 800px) {
+
+    .search{
+        width: fit-content;
+    }
+    .input input{
+        display: none;
+    }
+    #bin{
+        display: none;
+    }
+    .home img {
+        /* width: 32px;     */
+        height: 32px;
+        border-radius: 40px;
+
+    }
+    .input img{
+           width: 32px;    
+           /* height: 32px; */
+           border-radius: 40px;
+    }
+    .login button{
+        font-size: 0.7em;
+        padding: 4px 6px;
+    }
+
+    .forSeekBar{
+        height: fit-content;
+        font-size: .9em;
+        text-align: center;
+    }
+    .playBar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .TimeAndSound{
+        display: flex;
+        justify-content: center;
+    }
+    .left{
+        width: 80%;
+    }
+
+
+    
+}
